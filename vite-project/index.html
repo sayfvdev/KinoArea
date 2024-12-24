@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <section class="kinoarea">
+    <div class="container">
+      <header class="kinoarea_header">
+        <nav class="navigation">
+          <a href="/"><img src="/icons/Логотип.svg" alt=""></a>
+
+          <div class="center_block">
+            <a href="#">Афиша</a>
+            <a href="#">Медиа</a>
+            <a href="#">Фильмы</a>
+            <a href="#">Актёры</a>
+            <a href="#">Новости</a>
+            <a href="#">Подборки</a>
+            <a href="#">Категории</a>
+          </div>
+
+          <div class="right_block">
+            <button class="search"><img src="/icons/search.svg" alt=""></button>
+            <button class="login">Войти</button>
+          </div>
+
+
+          <dialog id="searchDialog">
+            <div class="search-container">
+              <button class="close-btn" id="closeDialog">X</button>
+              <input type="text" class="search-input" id="searchInput" placeholder="Введите запрос...">
+            </div>
+            <div class="results" id="results"> </div>
+          </dialog>
+        </nav>
+      </header>
+
+
+
+      <div class="films">
+
+
+        <div class="now_film">
+          <h1>Сейчас в кино</h1>
+          <div class="line"></div>
+          <nav class="films_nav">
+            <a href="#">Все</a>
+            <a href="#">Боевики</a>
+            <a href="#">Приключения</a>
+            <a href="#">Комедии</a>
+            <a href="#">Фантастика</a>
+            <a href="#">Триллеры</a>
+            <a href="#">Драма</a>
+          </nav>
+        </div>
+
+
+        <div class="films_info"></div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="now_trailer">
+    <div class="container">
+
+      <div class="trailer">
+        <h1>Новые трейлеры</h1>
+        <a href="#">Все трейлеры <img src="/icons/strelka.svg" alt=""></a>
+      </div>
+
+      <div class="video_trailer">
+        <video poster="/img/poster.jpg" controls width="1430" height="765">
+          <source src="/video/trailer.mp4" type="video/mp4">
+          <source src="example.webm" type="video/webm">
+        </video>
+      </div>
+
+
+      <div class="trailer_info">
+        <h1>Форсаж 9</h1>
+
+        <div class="share">
+          <a href="#"><img src="/icons/Vk.png" alt=""></a>
+          <a href="#"><img src="/icons/insta.png" alt=""></a>
+          <a href="#"><img src="/icons/facebook.png" alt=""></a>
+          <a href="#"><img src="/icons/twiter.png" alt=""></a>
+          <a class="dot" href="#">• • •</a>
+        </div>
+
+        <div class="assessments">
+          <div class="like_box">
+            <button class="like"><img src="/icons/like.svg" alt=""></button>
+            <p><span>3 245</span></p>
+          </div>
+
+          <div class="dizlike_box">
+            <button class="dizlike"><img src="/icons/dizlike.svg" alt=""></button>
+            <p><span>245</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="all_video_trailer">
+        <div class="vid_trailer">
+          <div class="vd">Сюда вставим видео</div>
+          <p><span>Форсаж</span></p>
+        </div>
+        <div class="vid_trailer">
+          <div class="vd">Сюда вставим видео</div>
+          <p><span>Форсаж</span></p>
+        </div>
+        <div class="vid_trailer">
+          <div class="vd">Сюда вставим видео</div>
+          <p><span>Форсаж</span></p>
+        </div>
+        <div class="vid_trailer">
+          <div class="vd">Сюда вставим видео</div>
+          <p><span>Форсаж</span></p>
+        </div>
+        <div class="vid_trailer">
+          <div class="vd">Сюда вставим видео</div>
+          <p><span>Форсаж</span></p>
+        </div>
+        <div class="vid_trailer">
+          <div class="vd">Сюда вставим видео</div>
+          <p><span>Форсаж</span></p>
+        </div>
+        <div class="vid_trailer">
+          <div class="vd">Сюда вставим видео</div>
+          <p><span>Форсаж</span></p>
+        </div>
+      </div>
+
+
+      <div class="films-container">
+        <div class="films-header">
+          <h1>Сейчас в кино</h1>
+          <div class="header-line"></div>
+          <nav class="films-navigation">
+            <a href="#">Все время</a>
+            <a href="#">2020</a>
+            <a href="#">2019</a>
+            <a href="#">2018</a>
+            <a href="#">2017</a>
+            <a href="#">2016</a>
+            <a href="#">2015</a>
+          </nav>
+        </div>
+        <div class="films-list"></div>
+      </div>
+
+
+      <div class="actor-container">
+        <div class="actor-header">
+          <h1>Популярные персоны</h1>
+          <div class="actor-line"></div>
+          <nav class="films-navigation">
+            <a href="#">За год</a>
+            <a href="#">За месяц</a>
+            <a href="#">За неделю</a>
+
+          </nav>
+        </div>
+
+        <div class="actor">
+
+          <div class="actor_photo">
+            <div class="actor_info">
+
+              <div class="actor_left">
+                <div class="actor_one">
+                  <p class="place"><span>1-e место</span></p>
+                  <h3 class="name"><span>Квентин Тарантино</span></h3>
+                  <h4><span>Quentin Tarantino</span></h4>
+                  <p class="age">57 лет</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="actor_right">
+              <div class="actor_two">
+                <p class="place"><span>2-e место</span></p>
+                <h3 class="name"><span>Джейсон Стейтем</span></h3>
+                <h4><span>Jason Statham</span></h4>
+                <p class="age">52 лет</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="actor-list">
+            <div class="actor-card">
+              <div class="actor-info">
+                <div class="actor-name">Тинто Брасс</div>
+                <div class="actor-age">87 лет</div>
+              </div>
+              <div class="actor-position">3-е место</div>
+            </div>
+
+            <div class="actor-card">
+              <div class="actor-info">
+                <div class="actor-name">Джеки Чан</div>
+                <div class="actor-age">66 лет</div>
+              </div>
+              <div class="actor-position">4-е место</div>
+            </div>
+
+            <div class="actor-card">
+              <div class="actor-info">
+                <div class="actor-name">Том Харди</div>
+                <div class="actor-age">42 года</div>
+              </div>
+              <div class="actor-position">5-е место</div>
+            </div>
+
+            <div class="actor-card">
+              <div class="actor-info">
+                <div class="actor-name">Акшай Кумар</div>
+                <div class="actor-age">52 года</div>
+              </div>
+              <div class="actor-position">6-е место</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+
+    </div>
+    </div>
+  </section>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
